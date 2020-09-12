@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link  rel="stylesheet" href = "{% static 'main/css/main.css' %}" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <title>test</title>
+    
+  </head>
+  <body >
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="">الرئيسية</a>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'main:about' %}">عن الاريج <span class="sr-only">(current)</span></a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="{% url 'main:contact' %}">اتصل بنا</a>
+          </li>
+        </ul>
+      </div>
+       <form class="form-inline">
+            <a class="nav-link" href="{% url 'account:login' %}">تسجيل الدخول </a>
+      </form>
+    </nav>
+<main >
+    <div class="container" >
+   <div style="    margin: auto;
+   width: fit-content;">
+     <div class="img-div1" > <img class="img1"   src="logo3.jpg" /></div>
+        <div class="areej-title">  مدارس الاريج </div>
+     <div class="img-div2"> <img  class="img2" src="logo4.jpg" /></div>
+   </div>
+         
+
+    <div class="bk" style=" background: url('{% static 'main/images/bk1.jpg' %}') no-repeat center center fixed  ;" >
+    </div>
+    &nbsp
+
+    <div class="paragraph-container">
+        
+        <div class="paragraph-title"
+            >
+               نحط موضوع مع بعض 
+        </div> 
+
+       <div class="paragraph-sup-title"
+       >
+            Knowledge Meets Curiosity
+       </div>
+
+        <div class="paragraph">
+           Tackling this project required breaking it into several phases. The most important stage was outlining my goals and defining the research questions. Once these were in place, I spent hours at the school library, surfed the net for online resources and carried out various experiments and tests. Writing came next, and the outcome is here for you to judge. Would love to hear your thoughts and comments - contact me at school or by email!
+        </div>
+
+    </div>
+
+    <div class="bk"
+     style="  background: url('{% static 'main/images/bk2.jpg' %}') no-repeat center center fixed  ; " >
+
+    </div>
+
+    <div class="paragraph-container">
+        
+      <div class="paragraph-title"
+          >
+             نحط موضوع مع بعض 
+      </div> 
+
+     <div class="paragraph-sup-title"
+     >
+          Knowledge Meets Curiosity
+     </div>
+
+      <div class="paragraph">
+         Tackling this project required breaking it into several phases. The most important stage was outlining my goals and defining the research questions. Once these were in place, I spent hours at the school library, surfed the net for online resources and carried out various experiments and tests. Writing came next, and the outcome is here for you to judge. Would love to hear your thoughts and comments - contact me at school or by email!
+      </div>
+
+  </div>
+
+  <div class="bk"
+   style="  background: url('{% static 'main/images/bk2.jpg' %}') no-repeat center center fixed  ; " >
+
+  </div>
+   
+   
+    <div style="width: 100%;
+    height: 388px;
+    background: transparent;
+    background-color: whitesmoke;">
+          <div style="font: normal normal normal 40px/1.35em raleway,sans-serif;
+          text-align: center;
+          "> contact us </div>
+
+            
+              <div style="text-align: center;">
+                <form  method="post" style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; font: normal normal normal 15px/1.875em avenir-lt-w01_35-light1475496,sans-serif;     width: max-content;
+                margin: auto"> 
+                  <div style="margin-top: 22px;">
+                    <div style="display: inline-block;">
+                       <input id="form_name" name="first_name" class="input" type="text"  placeholder="first name" required="">
+                       <div class="help-block with-errors">
+                 </div>
+                 </div>
+               
+                 <div style="display: inline-block;">
+                  <input id="form_lastname" name="last_name" class="input" type="text"  placeholder="last name" required=""> 
+                  <div class="help-block with-errors">    </div>
+                </div>
+              </div>
+   
+             <div style="text-align: center;">
+              <div style="display: inline-block;">   
+                <input id="form_email" name="email" class="input" type="email"  placeholder="email" required="">
+                <div class="help-block with-errors"> </div>
+              </div>
+                  
+   
+                  <div style="display: inline-block;">  
+                    <input id="form_phone" name="phone" class="input" type="text"  placeholder="phone number" required="">
+                    <div class="help-block with-errors"></div>
+
+                  </div>
+
+             </div>
+                  
+   
+                 
+          
+            <div style="    width: 100%;
+            display: block;
+            margin: 24px 0px;">
+                  <input style="width: 100%;" id="form_message" name="message" class="input" type="text"  placeholder="type message" required="">
+                    <div class="help-block with-errors"></div>
+             </div>
+                
+   
+                
+    
+                 <div class="col-md-12"> 
+                  <input type="submit" class="btn btn-success btn-send" value="Send message"> 
+               </div> 
+                <p>
+                  <!-- <strong>*</strong> يجب تعبئة جميع الخانات لقبول الطلب.  -->
+               </p> 
+              
+               </form>
+              </div>
+             </div>
+       
+           <footer style="bottom: 0px; height: 100px; background-color: whitesmoke; width: 100%;">
+
+            <div style="text-align: center;
+            line-height: 1.79em;font :normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,sans-serif;
+            margin: 6% 0px 0px 0px;">
+                  2020 Al-Areej , build by <a href="https://web.facebook.com/profile.php?id=100002411706224"> hamza kamel </a>
+            </div>
+
+           </footer>
+          </div>
+   </main>
+  </body>
+</html>
